@@ -1,4 +1,4 @@
-const redirectUri = "https://eliasw4444.github.io/p/";
+const redirectUri = "https://eliasw4444.github.io/p/index.html";
 const authEndpoint = "https://accounts.spotify.com/authorize";
 
 const clientId = "7fcfb8b43cfa49c395412083cf51bf27";
