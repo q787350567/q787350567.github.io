@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="request.js"></script>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <h1>Euterpe</h1>
+    <img src="login.jpg" alt="Music Notes" class="music-image" />
+    <div class="login-container">
+      <h2>Account Login</h2>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="rememberMe" />
+        <label for="rememberMe">Remember me</label>
+      </div>
+
+      <button
+        class="spotify-button"
+        id="SpotifyAuth"
+        onclick="loginWithSpotify()"
+      >
+        Continue with Spotify
+      </button>
+    </div>
+
+    <script src="login.js"></script>
+    <script>
+      const loginWithSpotify = () => {
+        window.location.href = loginUrl;
+      };
+
+      window.onload = () => {
+        const hash = window.location.hash;
+        let token = window.localStorage.getItem("token");
+
+        if (!token && hash) {
+          token = hash
+            .substring(1)
+            .split("&")
+            .find((elem) => elem.startsWith("access_token"))
+            .split("=")[1];
+
+          window.localStorage.setItem("token", token);
+        }
+
+        if (token) {
+          // 跳转到p2
+          window.axiosInstance
+            .get("/me")
+            .then((response) => {
+              const data = response.data;
+              localStorage.setItem("userInfo", JSON.stringify(data));
+              window.location.href = "https://eliasw4444.github.io/p/p2.html";
+            })
+            .catch((error) => {
+              // 处理错误
+              // console.error('请求失败:', error);
+            });
+          // setAccessToken(token);
+          // spotify.setAccessToken(token);
+        }
+      };
+    </script>
+  </body>
+</html>

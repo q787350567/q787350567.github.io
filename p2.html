@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Euterpe</title>
+    <link rel="stylesheet" href="p2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="request.js"></script>
+    <script src="p2.js"></script>
+  </head>
+  <body>
+    <header class="tp">
+      <h1 class="Eut">Euterpe</h1>
+      <a href="profile.html" class="setting" id="setting">
+        <img
+          src="1103621.png"
+          alt="setting"
+          style="cursor: pointer; width: 30px; height: auto"
+        />
+      </a>
+    </header>
+
+    <div class="list">
+      <header class="head">
+        <button class="rbutton">Recommend Playlist</button>
+      </header>
+
+      <div class="playlist scrollable-songs">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody id="songList"></tbody>
+        </table>
+      </div>
+      <footer class="footer">
+        <button class="mbutton" id="soundAuraButton">Sound Aura mode</button>
+      </footer>
+    </div>
+  </body>
+</html>

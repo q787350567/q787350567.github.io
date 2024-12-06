@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('Music-Consideration-Backgrounds1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.title {
+    color: #00aaff;
+    font-size: 50px;
+    margin: 0;
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.settings-profile {
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 800px;
+    height: 400px;
+    background-color: #fff;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.button {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    width: 70px;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: #0088cc;
+}
+
+.options {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+
+
+.formBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+}

@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('Music-Consideration-Backgrounds1.jpg');
+    
+  
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.tp {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fffefe;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 30px;
+}
+
+.Eut {
+  color: #28a0e5;
+  font-size: 24px;
+  margin: 0;
+}
+
+.setting {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 40px;    
+}
+
+.setting img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.list {
+  width: 90%;
+  max-width: 750px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rbutton {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.playlist table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.playlist th,
+.playlist td {
+  padding: 10px;
+  text-align: left;
+}
+
+
+.scrollable-songs {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+
+.song-row {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.song-title {
+  display: flex;
+  align-items: center;
+}
+
+.song-title img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-name {
+  font-weight: bold;
+}
+
+.artist-name {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mbutton {
+  background-color: #00aaff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  
+  font-size: 16px;
+}

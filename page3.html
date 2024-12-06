@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Euterpe</title>
+    <link rel="stylesheet" href="page3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="request.js"></script>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <h1 class="title">Euterpe</h1>
+      <a href="profile.html" class="settings">
+        <img
+          src="1103621.png"
+          alt="settings"
+          style="width: 30px; height: auto"
+        />
+      </a>
+    </header>
+
+    <div class="list">
+      <h2 class="h2">Sound Aura trends</h2>
+      <div class="playlist scrollable-songs">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Date</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody id="songList"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- <div class="image-placeholder">
+        <img src="placeholder-image.png" alt="Placeholder">
+    </div> -->
+
+    <button class="backbutton" id="backButton">Back</button>
+    <button class="soundAuraButton" id="soundAuraButton">
+      Sound Aura Reccomend
+    </button>
+
+    <script src="page3.js"></script>
+  </body>
+</html>

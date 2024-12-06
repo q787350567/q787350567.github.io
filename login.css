@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('Music-Consideration-Backgrounds1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h1 {
+    color: #00aaff;
+    font-size: 5rem;
+    margin-top: 20px;
+  }
+
+  .music-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .login-container {
+    background: #f0f0f0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .checkbox-group input {
+    margin-right: 5px;
+  }
+
+
+
+ 
+
+  .spotify-button {
+    width: 100%;
+    padding: 10px;
+    background: #1DB954;
+    color: #333;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    transition: background 0.3s;
+  }
+
+  .spotify-button:hover {
+    background: #e0e0e0;
+  }
+
+
